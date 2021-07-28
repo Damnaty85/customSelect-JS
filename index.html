@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<select name="" data-custom>
+    <option value="jan">январь</option>
+    <option value="feb">февраль</option>
+    <option value="mart">март</option>
+    <option value="apr">апрель</option>
+    <option value="may">май</option>
+    <option value="jun">июнь</option>
+    <option value="jul">июль</option>
+    <option value="avg">август</option>
+    <option value="sent">сентябрь</option>
+    <option value="okt">октябрь</option>
+    <option value="nov">ноябрь</option>
+    <option value="dec">декабрь</option>
+</select>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const selectElements = document.querySelectorAll('[data-custom]');
+
+        selectElements.forEach((selectElement) => {
+            new Select(selectElement);
+        })
+    })
+</script>
+<script src="main.js"></script>
+</body>
+</html>
